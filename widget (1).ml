@@ -81,7 +81,7 @@ let hpair (w1:widget) (w2:widget) : widget = {
 (** The vpair widget lays out two widgets vertically, aligned at their
     left edges.
 
-   TODO: You will implement vpair in Task 1. *)
+*)
 let vpair (w1: widget) (w2: widget) : widget = {
    repaint = (fun (g: Gctx.gctx) ->
       let (_, y1) = w1.size () in
@@ -111,7 +111,6 @@ let vpair (w1: widget) (w2: widget) : widget = {
    a fold_left function. You may want to think about what this does,
    and how it's different from the fold you're used to.  *)
 
-(* TODO: You will implement list_layout in Task 1. *)
 let list_layout (pair: widget -> widget -> widget)
          (ws: widget list) : widget =
 
